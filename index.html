@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enigma - Nicolas</title>
+  <link rel="icon" type="image/gif" href="https://i.pinimg.com/originals/3f/b8/d9/3fb8d98a0e07f0294d4294630d03a691.gif"/>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div id="background-gif"></div>
+
+  <div id="equation">
+    <h1 class="titulo">Preencha os espaços com "*"</h1>
+    <div class="equation__text">( * ) x ( * ) - ( * ) x ( * ) + (sqrt(9)) - 47 = ( * ) </div> <br>
+    <div class="inputS">
+    <input type="number" id="num1" class="numeros"> x 
+    <input type="number" id="num2" class="numeros"> - 
+    <input type="number" id="num3" class="numeros"> x 
+    <input type="number" id="num4" class="numeros"> + 
+    <input type="number" id="num5" class="numeros"> - 47 = 
+    <input type="number" id="result" class="numeros"> 
+  </div>
+  </div>
+  <div id="answer">
+    <button onclick="checkAnswer()">Verificar resposta</button>
+  </div>
+
+  <div class="player">
+    <button id="close-btn">X</button>
+    <audio controls id="som">
+  <source src="/assets/musga.mp3" type="audio/mp3">
+Your browser does not support the audio element.
+</audio>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
